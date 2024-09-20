@@ -1,0 +1,249 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #fff;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    color: #f3f5f7; 
+    background-color: #555;
+}
+
+
+.main {
+    text-align: right;
+    margin: 0;
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: cover;
+    border-radius: 0 0 10px 0;
+}
+
+.main figcaption {
+    color: #505050;
+}
+
+
+input, textarea {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.container, .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Cards */
+.card1, .card2, .card3 {
+    padding: 20px;
+    width: calc(30% - 20px);
+    text-align: center;
+       
+}
+
+.container2 {
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHgxMTY5NTQwLWltYWdlLWpvYjYzMC1hLWwwZzA2OGd0LmpwZw.jpg);
+    display: flex;
+    padding: 20px;
+   
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+       
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card1, .card2, .card3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .col-sm-6 {
+        flex: 1 1 100%;
+    }
+
+    .container_site {
+        flex-direction: column;
+    }
+
+    .col-md-4, .col-md-3 {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+.logo {
+    width: 80px;
+    height: 50px;
+}
+
+.col-lg-1 {
+    display: inline-flex;
+    align-items: center;
+}
+
+.container_site {
+    display: flex;        
+    flex-wrap: wrap;      
+    gap: 20px;            
+    padding: 20px;        
+    box-sizing: border-box;
+    justify-content: center;
+}
+.col-md-3 {
+    flex: 1 1 calc(33.333% - 20px); 
+    box-sizing: border-box;
+    border: 1px solid #ddd;         
+    border-radius: 8px;              
+    background-color: #fff;         
+    padding: 15px; 
+    text-align: center;
+    margin-top: 10px;
+                  
+}
+.col-md-3 img {
+    max-width: 100%;  
+    height: auto; 
+      
+}
+
+.col-md-3 p {
+    padding: 25px; 
+      
+}
+
+
+
+.container_tabela {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.tabela1, .tabela2 {
+flex: 1;
+background-color: #fff;
+margin: 0;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+    
+    
+  
+
+}
+
+th, td {
+    border-bottom: solid 1px #909090;
+    padding: 10px;
+    text-align: left;
+    
+    
+    }
+
+
+
+td:last-child {
+    background-color: #ddd;
+}
+
+th:last-child {
+    background-color: #ddd;
+}
+
+.jumbotron{
+background-image: url(https://fcmsantacasasp.edu.br/blog/wp-content/uploads/2022/03/especialista-ou-generalista.jpg);
+}
+#col-6{
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHgxMTY5NTQwLWltYWdlLWpvYjYzMC1hLWwwZzA2OGd0LmpwZw.jpg);
+}
+.col-sm-6{
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHgxMTY5NTQwLWltYWdlLWpvYjYzMC1hLWwwZzA2OGd0LmpwZw.jpg);
+}
